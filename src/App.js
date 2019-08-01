@@ -1,30 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom'; 
-import Button  from '@material-ui/core/Button'
+import ReactDOM from 'react-dom';
+import {
+  Route, 
+  Link, 
+  BrowserRouter as Router
+} from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button variant="contained" color="primary">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        </Button>
-      </header>
-    </div>
-  );
-}
 
+// Components
+import Btn from './components/Button/Button'
+import Home from './components/Navbar/DR.js'
+import Main from './components/Main/Main'
+import Welcome from './components/Welcome/Welcome'
+import DRA from './components/Main/DRA'
+import Alert from './components/Alert/Alert'
+import Menu from './components/Alert/Menu1'
+
+// Components from Material Desing
+import HomeMD from './components/Home/Drawer'
+
+function App(){
+  return (
+    <Home />
+    // <Main />
+    // <Welcome />
+    // <DRA/>
+    // <Alert/>
+    // <Menu/> 
+    // <HomeMD/>
+  )
+}
 export default App;
